@@ -2,6 +2,7 @@ import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import Index from "./pages/Index.jsx";
 import ConfettiPage from "./pages/ConfettiPage.jsx";
 import Navbar from "./components/Navbar.jsx";
+import KanbanPage from "./pages/KanbanPage.jsx";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Routes>
         <Route exact path="/" element={<Index />} />
         <Route exact path="/confetti" element={<ConfettiPage />} />
+        <Route exact path="/kanban" element={<KanbanPage />} />
       </Routes>
     </Router>
   );
